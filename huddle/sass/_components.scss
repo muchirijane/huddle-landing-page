@@ -1,0 +1,576 @@
+.container{
+    padding: 4rem;
+
+   
+     @media only screen and (max-width: $bp-laptop){
+         padding: 0;
+     }
+}
+//////////////////////////////////
+///////STYLING THE HERO SECTION
+.hero{
+    padding: 6rem;
+    background-color: var( --color-Pale-cyan);
+    background-image: url(../img/bg-hero-desktop.svg);
+    background-size: cover;
+    padding-bottom: 7rem;
+
+    @media only screen and (max-width: $bp-tablet){
+        padding-bottom: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-mini-tablet){
+        padding: 1rem;
+        background-image: url(../img/bg-hero-mobile.svg);
+    }
+
+    &__header{
+        display: flex;
+        margin-bottom: 10rem;
+        justify-content: center;
+        align-items: center;
+
+        @media only screen and (max-width: $bp-mini-tablet){
+            padding: 3rem 5rem;
+            margin-bottom: 6rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile){
+            padding: 0;
+            margin-top: 4rem;
+        }
+        
+
+    }
+
+    &__header-logo{
+        height: 2.5rem;
+        margin-right: auto;
+
+    }
+
+    &__btn{
+        @include cta(var(--color-white),var(--color-dark-cyan));
+        
+        &:hover{
+            background-color: var(--color-dark-cyan);
+            color: var(--color-white);
+        }
+
+    }
+    &__btn-text{
+
+
+    }
+
+    &__details{
+        display: flex;
+        margin-bottom: 7rem;
+
+        @media only screen and (max-width: $bp-mini-tablet){
+            flex-direction: column;
+            padding: 0 5rem;
+            align-items: center;
+        }
+
+        @media only screen and (max-width: $bp-mini-tablet){
+            margin-bottom: 2rem;
+        }
+
+
+    }
+
+    &__content{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-right: 10rem;
+        color: var( --color-dark-cyan);
+
+        @media only screen and (max-width: $bp-small-tablet){
+            margin-right: 8rem;
+        }
+
+        @media only screen and (max-width: $bp-mini-tablet){
+            margin-right: 6rem;
+            text-align: center;
+            display: contents;
+        }
+
+    }
+
+    &__heading{
+       font-size: 4.6rem;
+       font-family: 'poppins', sans-serif;
+       font-weight: 600;
+
+       @media only screen and (max-width: $bp-small-laptop){
+        font-size: 4rem;
+       }
+
+       @media only screen and (max-width: $bp-tablet){
+        font-size: 3rem;
+       }
+
+       @media only screen and (max-width: $bp-mini-tablet){
+        font-size: 5rem;
+       }
+
+       @media only screen and (max-width: $bp-lg-mobile){
+        font-size: 4rem;
+    }
+
+    }
+
+    &__paragraph{
+        padding: 3rem 0;
+
+        @media only screen and (max-width: $bp-mini-tablet){
+            font-size: 2.5rem;
+        }
+
+    }
+
+    &__image{
+        height: 40rem;
+
+        @media only screen and (max-width: $bp-laptop){
+            height: 35rem;
+        }
+
+        @media only screen and (max-width: $bp-small-laptop){
+            height: 30rem;
+        }
+
+        @media only screen and (max-width: $bp-tablet){
+            height: 28rem;
+        }
+
+        @media only screen and (max-width: $bp-small-tablet){
+            height: 26rem;
+        }
+
+        @media only screen and (max-width: $bp-mini-tablet){
+            height: 24rem;
+            margin-top: 8rem;
+        }
+        @media only screen and (max-width: $bp-mini-tablet){
+            height: 30rem;
+        }
+    }
+
+    &__photo{
+        height: 100%;
+        width: auto;
+
+    }
+
+    
+}
+//////////////////////////////////
+///////STYLING THE HERO SECTION CTA BUTTONS
+.btn-inline{
+    @include cta(var(--color-primary), var(--color-white));
+
+    &__span{
+        color: var(--color-white);
+    }
+
+    &:hover{
+        background-color: var(--color-dark-cyan);
+    }
+
+}
+
+//////////////////////////////////
+///////FEATURE SECTION
+.feature{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.feature__item{
+  @include feature-item(5rem 15rem);
+
+  @media only screen and (max-width: $bp-desktop){
+    padding: 5rem 10rem;
+   }
+
+   @media only screen and (max-width: $bp-tablet){
+    padding: 5rem 8rem;
+   }
+
+   @media only screen and (max-width: $bp-ipad){
+    padding: 5rem 5rem;
+}
+
+   
+
+   &--1{
+     margin-top: 15rem;
+
+     @media only screen and (max-width: $bp-tablet){
+        margin-top: 10rem;
+     }
+
+   }
+}
+
+.feature__item--2{
+    @include feature-item(5rem 10rem);
+    display: flex;
+    flex-direction: row-reverse;
+
+    @media only screen and (max-width: $bp-desktop){
+       padding: 5rem 5rem;
+    }
+
+    @media only screen and (max-width: $bp-tablet){
+        padding: 4rem 3rem; 
+    }
+
+    @media only screen and (max-width: $bp-mini-tablet){
+        padding: 3rem 3rem;
+    }
+}
+.feature__text{
+    padding-top: 8rem;
+    margin-right: 13rem;
+
+    @media only screen and (max-width: $bp-small-laptop){
+        margin-right: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-tablet){
+        padding-top: 5rem;
+        margin-right: 8rem;  
+    }
+
+    @media only screen and (max-width: $bp-mini-tablet){
+        padding-top: 3rem;
+        margin-right: 5rem;
+    }
+
+    @media only screen and (max-width: $bp-ipad){
+        margin-right: auto;
+        text-align: center;
+    }
+
+}
+.feature-text--2{
+    padding-top: 8rem;
+    margin-left: 20rem;
+
+    @media only screen and (max-width: $bp-tablet){
+        padding-top: 4rem;
+        margin-left: 10rem;
+    }
+
+    @media only screen and (max-width: $bp-ipad){
+        margin-left: auto;
+        text-align: center;
+    }
+}
+
+.feature__heading{
+    font-family: 'poppins', sans-serif;
+    font-weight: 600;
+    color: var(--color-dark-cyan);
+    margin-bottom: 1.5rem;
+
+}
+
+.feature__paragraph{
+
+}
+.feature__image{
+    height: 30rem;
+    width: 30rem;
+
+    @media only screen and (max-width: $bp-tablet){
+        height: 20rem;
+        width: 20rem;
+        margin-right: 4rem;
+    }
+}
+
+.feature__photo{
+    height: 100%;
+    width: auto;
+
+}
+////////////////////////////////////////////
+////////////////CTA SECTION
+
+
+.cta{
+    background-color: var(--color-white);
+    box-shadow: var(--shadow-dark);
+    position: relative;
+    z-index: 1000;
+    margin: 10rem 30rem;
+    padding: 7rem 9rem;
+    border-radius: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media only screen and (max-width: $bp-tablet){
+        margin: 8rem 20rem;
+    }
+    @media only screen and (max-width: $bp-small-tablet){
+        margin: 4rem 20rem;
+    }
+    @media only screen and (max-width: $bp-mini-tablet){
+        margin: 4rem 18rem;
+    }
+    @media only screen and (max-width: $bp-ipad){
+        margin: 4rem 2rem;
+        padding: 7rem 4rem;
+    }
+
+
+    &__item-heading{
+        font-size: 3rem;
+        font-family: 'poppins', sans-serif;
+        font-weight: 600;
+        margin-bottom: 3rem;
+        color: var(--color-dark-cyan);
+
+        @media only screen and (max-width: $bp-desktop){
+            font-size: 2rem;
+        }
+
+        @media only screen and (max-width: $bp-mini-tablet){
+            font-size: 1.7rem;
+        }
+
+        @media only screen and (max-width: $bp-ipad){
+            font-size: 3rem;
+        }
+
+        @media only screen and (max-width: $bp-mobile){
+            font-size: 2rem;
+        }
+        
+    }
+}
+
+
+.btn-buttom{
+    display: block;
+    font-size: 2rem;
+
+    @media only screen and (max-width: $bp-desktop){
+        font-size: 1.5rem;
+    }
+
+    @media only screen and (max-width: $bp-ipad){
+        font-size: 2rem;
+    }
+
+}
+
+////////////////////////////////////////////
+////////////////footer SECTION
+
+.footer{
+    background-color: var(--color-dark-cyan);
+    color: var(--color-white);
+    padding: 15rem 10rem 5rem 0;
+    display: flex;
+    margin-top: -13rem;
+
+    @media only screen and (max-width: $bp-tablet){
+        padding: 10rem 4rem 3rem 0;
+    }
+
+    @media only screen and (max-width: $bp-small-tablet){
+        padding: 8rem 4rem 3rem 0;
+    }
+
+    @media only screen and (max-width: $bp-ipad){
+        flex-direction: column;
+        padding: 12rem 4rem 3rem 0;
+    }
+
+
+    &__item{
+        margin: 3rem;
+
+        @media only screen and (max-width: $bp-ipad){
+            margin: 0;
+        }
+
+        &--1{
+            padding: 0 5rem;
+
+            @media only screen and (max-width: $bp-mini-tablet){
+                padding: 0rem 3rem;
+            }
+        }
+
+        &--2{
+            @include align;
+
+            @media only screen and (max-width: $bp-ipad){
+                padding-top: 5rem;
+                margin-left: 4rem;
+            }
+            
+
+        }
+
+        &--3{
+            @include align;
+
+            @media only screen and (max-width: $bp-ipad){
+                padding-top: 1rem;
+                margin-left: 4rem;
+            }
+        }
+    }
+
+    &__image{
+        height: 4rem;
+        margin-bottom: 4rem;
+
+        @media only screen and (max-width: $bp-tablet){
+            height: 3rem;
+        }
+
+    }
+
+    a:link,
+    a:visited{
+        color: var(--color-white);
+        text-decoration: none;
+        display: inline-block;
+
+        &:hover{
+            color: var(--color-grayish-blue);
+        }
+    }
+
+
+    &__location{
+        @include center;
+
+        &-icon{
+            height: 2.75rem;
+            width: 5.75rem;
+            margin-right: 2rem;
+            margin-bottom: 7rem;
+
+            @media only screen and (max-width: $bp-ipad){
+                width: 2.75rem;
+                margin-bottom: 0;
+            }
+
+        }
+
+        &-details{
+
+            @media only screen and (max-width: $bp-tablet){
+                font-size: 1.6rem;
+            }
+
+        }
+
+    }
+
+    &__phone{
+        @include center;
+
+        &-icon{
+            margin-right: 2rem;
+
+            @media only screen and (max-width: $bp-mobile){
+                height: 2.5rem;
+            }
+        }
+
+        &-number{
+
+        }
+    }
+
+    &__email{
+        @include center;
+
+
+        &-icon{
+            margin-right: 2rem;
+
+            @media only screen and (max-width: $bp-mobile){
+                height: 2.5rem;
+            }
+
+        }
+
+        &-address:link,
+        &-address:visited{
+            text-decoration: none;
+            color: var(--color-white);
+
+        }
+    }
+
+    &__detail{
+
+        &:not(:last-child){
+            margin-bottom: 1.4rem;
+        }
+
+    }
+
+    &__social{
+        display: flex;
+        border-radius: 50%;
+        align-items: center;
+        margin-top: -10rem;
+
+        @media only screen and (max-width: $bp-ipad){
+            margin-top: 5rem;
+            justify-content: center;
+        }
+
+    }
+
+    &__social--icon{
+        height: 3rem;
+        width: 3rem;
+        fill: var(--color-white);
+        border: 2px solid var(--color-white);
+        border-radius: 50%;
+        padding: 6px;
+
+        @media only screen and (max-width: $bp-ipad){
+            height: 4rem;
+             width: 4rem;
+        }
+        
+        &:not(:last-child){
+            margin-right: 1.1rem;
+        }
+    }
+
+
+}
+
+.legal{
+    background-color: var(--color-dark-cyan);
+    height: 6rem;
+    color: var(--color-white);
+    position: relative;
+    /* top: 0rem; */
+    text-align: end;
+    padding: 0 7rem;
+
+    @media only screen and (max-width: $bp-ipad){
+        text-align: center;
+    }
+}
