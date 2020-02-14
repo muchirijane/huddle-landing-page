@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+:root{
+    --color-primary:  hsl(322, 100%, 66%);
+    --color-Pale-cyan: hsl(193, 100%, 96%);
+    --color-dark-cyan: hsl(192, 100%, 9%);
+    --color-grayish-blue: hsl(208, 11%, 55%);
+    --color-grey-light-3: #f0eeee;
+
+    --color-white: #fff;
+
+    --shadow-dark: 0 2rem 6rem rgba(0,0,0, .1);
+    --shadow-light:  0 2rem 5rem rgba(0,0,0,.06);
+}
+$bp-desktop: 87.5em;
+$bp-laptop: 81.25em;
+$bp-small-laptop: 75em;
+$bp-tablet: 66.38em;
+$bp-small-tablet: 62.5em;
+$bp-mini-tablet: 56.25em;
+$bp-ipad: 43.75em;
+$bp-md-ipad: 37.5em;
+$bp-lg-mobile: 25rem;
+$bp-mobile: 23.4375em;
+
+
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%; //10/16 
+
+    @media only screen and (max-width: $bp-md-ipad){
+        font-size: 40%;
+    }
+
+    @media only screen and (max-width: $bp-lg-mobile){
+        font-size: 35%;
+    }
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    line-height: 1.6;
+    color: var(--color-grayish-blue);
+    font-size: 1.8rem;
+}
